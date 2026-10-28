@@ -20,7 +20,7 @@ Y = df["SalePrice"]
 
 ## EDA portion- 
 ## Fill the Na with mean value for SalePrice---
-Y = Y.fillna(Y[1].mean())
+Y = Y.fillna(Y.mean())
 ## Dropeing the null values-- as it is <5%
 X= X.dropna()
 Y = Y.loc[X.index]  ## this contain those values present in X-- number of data should be same
